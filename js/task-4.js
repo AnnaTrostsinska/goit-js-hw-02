@@ -1,7 +1,6 @@
 function getShippingCost(country) {
 
-    let shippingCost;
-    switch(country) {
+    let shippingCost; switch(country) {
         case "China":
             shippingCost = 100;
             break;
@@ -15,10 +14,10 @@ function getShippingCost(country) {
             shippingCost = 120;
             break;
         default:
-            return 'Sorry, there is no delivery to your country';
+            return `Sorry, there is no delivery to your country`;
     }
     
-    return 'Shipping to ${country} will cost ${shippingCost} credits';
+    return `Shipping to ${country} will cost ${shippingCost} credits`;
 }
 
 

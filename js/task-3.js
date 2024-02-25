@@ -1,13 +1,8 @@
 function checkForSpam(message) {
 
     const lowerCaseMessage = message.toLowerCase();
-    switch(message) {
-        case lowerCaseMessage.includes("spam") || lowerCaseMessage.includes("sale"):
-            return true;
-            break;
-        default:
-            return false;
-    }
+
+    return lowerCaseMessage.includes("spam") || lowerCaseMessage.includes("sale");
 }
     
 
